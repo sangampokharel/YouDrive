@@ -52,6 +52,33 @@ class OnBoardingMainViewController:UIPageViewController {
             self.skipButton.alpha = 0
         }
     }
+    @objc func moveToNext() {
+        
+        
+        if moveButton.currentImage ==  UIImage(systemName: "checkmark") {
+            // navigate to sign in
+        }else{
+            pageControl.currentPage += 1
+            guard let currentPage = viewControllers?[0] else { return }
+            guard let nextPage = dataSource?.pageViewController(self, viewControllerAfter: currentPage) else { return }
+            
+            setViewControllers([nextPage], direction: .forward, animated: true, completion: nil)
+            
+            let lastPage = pageControl.currentPage == pages.count - 1
+            if lastPage {
+                UIView.animate(withDuration: 0.5) {
+                    self.changeButtonImage(image: "checkmark")
+                    self.skipButton.alpha = 0
+                }
+                
+                
+            }
+        }
+       
+        
+        
+        
+    }
     
     
 }
@@ -73,6 +100,7 @@ extension OnBoardingMainViewController {
         moveButton.backgroundColor = .appYellowColor
         moveButton.tintColor = .appBlackColor
         moveButton.layer.cornerRadius = 30
+        moveButton.addTarget(self, action: #selector(moveToNext), for: .touchUpInside)
         changeButtonImage(image: "chevron.right")
         
         pageControl.translatesAutoresizingMaskIntoConstraints = false
@@ -82,8 +110,6 @@ extension OnBoardingMainViewController {
         pageControl.pageIndicatorTintColor = .white
         
     }
-    
-    
     func layout() {
         view.addSubview(stackView)
         view.addSubview(pageControl)
