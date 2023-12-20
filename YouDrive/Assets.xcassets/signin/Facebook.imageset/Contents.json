@@ -1,12 +1,15 @@
 {
   "images" : [
     {
-      "filename" : "Group 5558-3.pdf",
+      "filename" : "Facebook.pdf",
       "idiom" : "universal"
     }
   ],
   "info" : {
     "author" : "xcode",
     "version" : 1
+  },
+  "properties" : {
+    "preserves-vector-representation" : true
   }
 }

@@ -26,6 +26,9 @@ extension UIColor {
     static let appBlackColor = UIColor(hex: "#000002")
     static let appYellowColor = UIColor(hex: "#FBB136")
     static let appSubTitleTextColor = UIColor(hex: "#A4A2A2")
+    static let appTextFieldColor = UIColor(hex: "#444444")
+    static let appVerticalBorderLight = UIColor(hex: "#D6DBDF")
+    
     
     
     

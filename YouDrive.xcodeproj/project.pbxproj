@@ -18,6 +18,7 @@
 		DA3368F12B3333D900407E46 /* Heebo-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DA3368E82B3333D900407E46 /* Heebo-ExtraBold.ttf */; };
 		DA3368F32B3334D000407E46 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3368F22B3334D000407E46 /* Fonts.swift */; };
 		DA3368F62B33370300407E46 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3368F52B33370300407E46 /* SignInViewController.swift */; };
+		DA3368FA2B334F5D00407E46 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3368F92B334F5D00407E46 /* UIViewController.swift */; };
 		DAC4836C2B32C13500718D9A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC4836B2B32C13500718D9A /* AppDelegate.swift */; };
 		DAC483702B32C13500718D9A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC4836F2B32C13500718D9A /* MainViewController.swift */; };
 		DAC483752B32C13700718D9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAC483742B32C13700718D9A /* Assets.xcassets */; };
@@ -40,6 +41,7 @@
 		DA3368E82B3333D900407E46 /* Heebo-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Heebo-ExtraBold.ttf"; sourceTree = "<group>"; };
 		DA3368F22B3334D000407E46 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		DA3368F52B33370300407E46 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		DA3368F92B334F5D00407E46 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		DAC483682B32C13500718D9A /* YouDrive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YouDrive.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAC4836B2B32C13500718D9A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DAC4836F2B32C13500718D9A /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 			children = (
 				DAC483802B32C20F00718D9A /* AppColors.swift */,
 				DA3368F22B3334D000407E46 /* Fonts.swift */,
+				DA3368F92B334F5D00407E46 /* UIViewController.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -228,6 +231,7 @@
 				DA3368F32B3334D000407E46 /* Fonts.swift in Sources */,
 				DAC483872B32C5DD00718D9A /* OnBoardingMainViewController.swift in Sources */,
 				DAC483812B32C20F00718D9A /* AppColors.swift in Sources */,
+				DA3368FA2B334F5D00407E46 /* UIViewController.swift in Sources */,
 				DAC4838B2B3303CE00718D9A /* PageControl.swift in Sources */,
 				DA3368F62B33370300407E46 /* SignInViewController.swift in Sources */,
 				DAC483702B32C13500718D9A /* MainViewController.swift in Sources */,

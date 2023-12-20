@@ -1,12 +1,15 @@
 {
   "images" : [
     {
-      "filename" : "Group 5558-2.pdf",
+      "filename" : "Group 33801.pdf",
       "idiom" : "universal"
     }
   ],
   "info" : {
     "author" : "xcode",
     "version" : 1
+  },
+  "properties" : {
+    "preserves-vector-representation" : true
   }
 }
