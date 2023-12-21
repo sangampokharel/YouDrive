@@ -57,6 +57,12 @@ class OnBoardingMainViewController:UIPageViewController {
         
         if moveButton.currentImage ==  UIImage(systemName: "checkmark") {
             // navigate to sign in
+            
+            let signInVC = SignInViewController()
+            navigationController?.pushViewController(signInVC, animated: true)
+            
+            
+            
         }else{
             pageControl.currentPage += 1
             guard let currentPage = viewControllers?[0] else { return }
@@ -74,7 +80,7 @@ class OnBoardingMainViewController:UIPageViewController {
                 
             }
         }
-       
+        
         
         
         

@@ -28,13 +28,13 @@ class SignInViewController: UIViewController {
     var googleBtn:UIButton!
     var appleBtn:UIButton!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupKeyboardDismissRecognizer()
         style()
         layout()
         
+        view.backgroundColor = .appBlackColor
         
         
         
@@ -54,12 +54,20 @@ class SignInViewController: UIViewController {
     }
     
     
+    @objc func handleSignInAction() {
+        let otpVC =  OTPViewController()
+        navigationController?.pushViewController(otpVC, animated: true)
+        
+        
+    }
     
 }
 
 extension SignInViewController {
     func style(){
         scrollView.translatesAutoresizingMaskIntoConstraints = false
+        scrollView.contentSize = CGSize(width: view.frame.width, height:view.frame.height)
+        
         
         imageView.translatesAutoresizingMaskIntoConstraints = false
         imageView.image = UIImage(named: "signin-logo")
@@ -98,6 +106,7 @@ extension SignInViewController {
         
         continueBtn = customButton(title: "continue")
         continueBtn.translatesAutoresizingMaskIntoConstraints = false
+        continueBtn.addTarget(self, action: #selector(handleSignInAction), for: .touchUpInside)
         
         
         let first = NSAttributedString(string: "By creating new account, you agree to our ", attributes: [
@@ -145,7 +154,7 @@ extension SignInViewController {
     }
     
     func layout() {
-        view.addSubview(scrollView)
+        self.view.addSubview(scrollView)
         scrollView.addSubview(imageView)
         scrollView.addSubview(stackView)
         stackView.addArrangedSubview(signInLabel)
@@ -190,9 +199,10 @@ extension SignInViewController {
             
             buttonStackView.centerXAnchor.constraint(equalTo: scrollView.centerXAnchor),
             buttonStackView.topAnchor.constraint(equalTo: orSignInWith.bottomAnchor,constant: 50),
-
+            buttonStackView.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor)
             
             
         ])
     }
+    
 }
